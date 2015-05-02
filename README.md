@@ -7,6 +7,11 @@ Ping Monitor uses vis.js library for ping visualization.
 
 ![client](http://i.imgur.com/w8EMBIO.png)
 
+Requirements
+--------------
+
+To run PingMonitor you need to have Python installed (version 3.x), and to view the logged ping data using HTML client, you need to be running a HTTP server with PHP support (such as nginx or xampp or anything else out there)
+
 Configuration
 --------------
 
@@ -14,7 +19,7 @@ Configuration
 	- **pingTargets** those will be the hosts that will be pinged
 	- **pingInterval** to set how often to ping targets, in seconds
 	- **fileUpdateInterval** to set how often to write ping data from memory to file, in seconds
-- Adjust timezone in HTML/index.php (2nd line) to fit yours (head to (php.net)[http://php.net/manual/en/timezones.php] for list of supported timezones)
+- Adjust timezone in HTML/index.php (2nd line) to fit yours (head to [php.net](http://php.net/manual/en/timezones.php) for list of supported timezones)
 
 How to use
 --------------
