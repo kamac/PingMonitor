@@ -5,7 +5,7 @@ Simple tool for testing your ping against desired targets (be it a website or yo
 
 Ping Monitor uses vis.js library for ping visualization.
 
-[client](http://i.imgur.com/w8EMBIO.png)
+![client](http://i.imgur.com/w8EMBIO.png)
 
 Configuration
 --------------
