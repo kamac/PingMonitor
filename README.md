@@ -14,6 +14,7 @@ Configuration
 	- **pingTargets** those will be the hosts that will be pinged
 	- **pingInterval** to set how often to ping targets, in seconds
 	- **fileUpdateInterval** to set how often to write ping data from memory to file, in seconds
+- Adjust timezone in HTML/index.php (2nd line) to fit yours (head to (php.net)[http://php.net/manual/en/timezones.php] for list of supported timezones)
 
 How to use
 --------------
