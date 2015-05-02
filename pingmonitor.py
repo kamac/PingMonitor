@@ -62,7 +62,7 @@ while True:
         for pingTarget in pingTargets:
             currentPing = ping(pingTarget)
             if currentPing is None:
-                currentPing = 999
+                currentPing = 0
             pings[pingTarget].append((daySeconds.to_bytes(4, sys.byteorder), currentPing.to_bytes(4, sys.byteorder)))
 
         time.sleep(pingInterval)
