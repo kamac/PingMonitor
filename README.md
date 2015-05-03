@@ -5,7 +5,7 @@ Simple tool for testing and logging your ping against desired targets (be it a w
 
 Ping Monitor uses vis.js library for ping timeline visualization.
 
-![client](http://i.imgur.com/w8EMBIO.png)
+![client](http://i.imgur.com/oM0yi3w.png)
 
 Requirements
 --------------
