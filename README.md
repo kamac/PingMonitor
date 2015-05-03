@@ -1,9 +1,9 @@
 Ping Monitor
 ==============
 
-Simple tool for testing your ping against desired targets (be it a website or your router floor below)
+Simple tool for testing and logging your ping against desired targets (be it a website or your router floor below)
 
-Ping Monitor uses vis.js library for ping visualization.
+Ping Monitor uses vis.js library for ping timeline visualization.
 
 ![client](http://i.imgur.com/w8EMBIO.png)
 
