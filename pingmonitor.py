@@ -26,15 +26,18 @@ def ping(addr, timeout=1):
         payload = random.randrange(0, 65536).to_bytes(2, 'big') + b'\x01\x00'
         packet  = b'\x08\x00' + b'\x00\x00' + payload
         packet  = b'\x08\x00' + chk(packet) + payload
-        conn.connect((addr, 80))
+        try:
+            conn.connect((addr, 80))
+        except Exception:
+            return None
         conn.sendall(packet)
- 
+     
         start = time.time()
- 
+     
         while select.select([conn], [], [], max(0, start + timeout - time.time()))[0]:
             packet    = conn.recv(1024)[20:]
             unchecked = packet[:2] + b'\0\0' + packet[4:]
- 
+     
             if packet == b'\0\0' + chk(unchecked) + payload:
                 return int((time.time() - start) * 1000)
 
