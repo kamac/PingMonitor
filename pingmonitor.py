@@ -30,7 +30,11 @@ def ping(addr, timeout=1):
             conn.connect((addr, 80))
         except Exception:
             return None
-        conn.sendall(packet)
+            
+        try:
+            conn.sendall(packet)
+        except Exception:
+            return None
      
         start = time.time()
      
