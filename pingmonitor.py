@@ -28,10 +28,6 @@ def ping(addr, timeout=1):
         packet  = b'\x08\x00' + chk(packet) + payload
         try:
             conn.connect((addr, 80))
-        except Exception:
-            return None
-            
-        try:
             conn.sendall(packet)
         except Exception:
             return None
