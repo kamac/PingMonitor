@@ -6,3 +6,46 @@ html, body {
 	overflow:hidden;
 	background: #0D0D0D;
 }
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menuBtn {
+	position:absolute;
+	right:0;
+	width:150px;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:center;
+	border-radius:5px;
+	background:#333;
+	color:#fff;
+	z-index:1000;
+	font-family: 'Open Sans', sans-serif;
+	cursor:pointer;
+	margin-top:5px;
+	margin-right:5px;
+	border:1px solid #fff;
+}
+
+.menuBtn:hover {
+	background:#eee;
+	color:#000;
+}
+
+.menuBtn:active {
+	transform:scale(0.95);
+	-webkit-transform:scale(0.95);
+	-moz-transform:scale(0.95);
+	-o-transform:scale(0.95);
+}
+
+.pLabel {
+	fill: #fff;
+}
