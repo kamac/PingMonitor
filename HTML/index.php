@@ -137,7 +137,7 @@ $pingTargets = scandir("../pings/");
 	    		var nextGap = gaps[i+1];
 	    		do
 	    		{
-		    		if(nextGap.beginX - currentGap.endX < 20000) {
+		    		if(nextGap.beginX - currentGap.endX < 40000) {
 		    			currentGap.endX = nextGap.endX;
 		    			i++;
 		    			if(i < gaps.length-1) {
@@ -155,7 +155,7 @@ $pingTargets = scandir("../pings/");
     	// get rid of too small gaps
     	gaps = [];
     	for(var i=0; i < mergedGaps.length; i++) {
-    		if(mergedGaps[i].endX - mergedGaps[i].beginX > 20000) {
+    		if(mergedGaps[i].endX - mergedGaps[i].beginX > 30000) {
     			gaps.push(mergedGaps[i]);
     		}
     	}
