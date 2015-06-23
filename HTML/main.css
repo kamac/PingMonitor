@@ -19,7 +19,8 @@ html, body {
 .menuBtn {
 	position:absolute;
 	right:0;
-	width:150px;
+	padding-left:5px;
+	padding-right:5px;
 	padding-top:5px;
 	padding-bottom:5px;
 	text-align:center;
@@ -39,12 +40,12 @@ html, body {
 	color:#000;
 }
 
-.menuBtn:active {
+/*.menuBtn:active {
 	transform:scale(0.95);
 	-webkit-transform:scale(0.95);
 	-moz-transform:scale(0.95);
 	-o-transform:scale(0.95);
-}
+}*/
 
 .pLabel {
 	fill: #fff;
